@@ -1,6 +1,6 @@
 src = fraction.cpp fraction_test.cpp
 project = fraction
-customer: $(src)
+fraction: $(src)
 	g++ $^ -lgtest -lgtest_main -lpthread -o $@
 run: fraction
 	./$^
